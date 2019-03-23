@@ -1,0 +1,20 @@
+﻿@inherits BootstrapComponentBase
+
+<DynamicElement Attributes="@UnknownParameters" TagName="div" class="@classname">
+    @ChildContent
+</DynamicElement>
+
+    @functions {
+    private string classname
+    {
+        get
+        {
+            var fluid = IsFluid ? "container-fluid" : "container";
+            return $"{fluid} {Class}";
+        }
+    }
+
+    [Parameter] private bool IsFluid { get; set; }
+    [Parameter] private string Class { get; set; }
+    [Parameter] private RenderFragment ChildContent { get; set; }
+    }

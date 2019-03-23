@@ -1,0 +1,19 @@
+﻿@inherits BootstrapComponentBase
+
+<DynamicElement Attributes="@UnknownParameters" TagName="form" class="@classname">
+    @ChildContent
+</DynamicElement>
+
+@functions {
+    string classname
+    {
+        get
+        {
+            var inline = IsInline ? "form-inline" : null;
+            return $"{inline} {Class}";
+        }
+    }
+    [Parameter] private bool IsInline { get; set; }
+    [Parameter] private string Class { get; set; }
+    [Parameter] private RenderFragment ChildContent { get; set; }
+}

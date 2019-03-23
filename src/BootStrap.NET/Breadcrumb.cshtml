@@ -1,0 +1,20 @@
+﻿@inherits BootstrapComponentBase
+
+<nav aria-label="breadcrumb">
+    <DynamicElement Attributes="@UnknownParameters" TagName="ol" class="@classname">
+        @ChildContent
+    </DynamicElement>
+</nav>
+
+
+@functions {
+    string classname
+    {
+        get
+        {
+            return $"breadcrumb {Class}";
+        }
+    }
+    [Parameter] private string Class { get; set; }
+    [Parameter] private RenderFragment ChildContent { get; set; }
+}

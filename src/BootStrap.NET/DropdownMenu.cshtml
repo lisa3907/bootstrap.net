@@ -1,0 +1,19 @@
+﻿@inherits BootstrapComponentBase
+
+<DynamicElement Attributes="@UnknownParameters" TagName="div" class="@classname">
+    @ChildContent
+</DynamicElement>
+
+@functions {
+    string classname
+    {
+        get
+        {
+            var open = IsOpen ? "show" : null;
+            return $"dropdown-menu {open} {Class}";
+        }
+    }
+    [Parameter] private bool IsOpen { get; set; }
+    [Parameter] private string Class { get; set; }
+    [Parameter] private RenderFragment ChildContent { get; set; }
+}
