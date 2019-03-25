@@ -1,4 +1,4 @@
-# BootStrap.Net - CryptoCurrency eXchange Trading Library for .NET
+# BootStrap.Net - BootStrap Library for .NET
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dnp9i3t6sexv9tpa?svg=true)](https://ci.appveyor.com/project/lisa3907/bootstrap-net)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/BootStrap.Net.svg)](https://www.nuget.org/packages/BootStrap.Net)
