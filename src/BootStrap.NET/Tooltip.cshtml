@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Blazor
-@using BootStrap.Net
+@using BootStrap.Net.util
 
 @inject Microsoft.JSInterop.IJSRuntime JSRuntime
 
@@ -17,7 +17,7 @@
         if (Target != null)
         {
             var placement = Placement.ToDescriptionString();
-            await (new BlazorStrapInterop(JSRuntime)).Tooltip(Target, tooltip, arrow, placement);
+            await (new BootStrapNetInterop(JSRuntime)).Tooltip(Target, tooltip, arrow, placement);
         }
     }
 

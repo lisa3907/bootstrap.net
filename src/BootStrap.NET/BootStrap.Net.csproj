@@ -6,16 +6,14 @@
     <IsPackable>true</IsPackable>
     <BlazorLinkOnBuild>false</BlazorLinkOnBuild>
     <LangVersion>7.3</LangVersion>
-    <PackageId>BootStrap.Net</PackageId>
-    <Version>0.1.0</Version>
-    <Authors>SeongAhn Lee</Authors>
+    <PackageId>BootStrapNet</PackageId>
+    <Version>0.9.0-pre</Version>
+    <Authors>Chanan Braunstein</Authors>
     <Title>Blazor BootStrap</Title>
-    <Description>A bootstrap component library for Blazor</Description>
-    <PackageProjectUrl>https://github.com/lisa3907/bootstrap.net</PackageProjectUrl>
-    <PackageTags>blazor;bootstrap</PackageTags>
+    <Description>A bootstrap4 component library for Blazor</Description>
+    <PackageProjectUrl>https://lisa3907.github.io/bootstrap.net/</PackageProjectUrl>
+    <PackageTags>blazor;bootstrap;bootstrap4</PackageTags>
     <RepositoryUrl>https://github.com/lisa3907/bootstrap.net</RepositoryUrl>
-    <Company>OdinSoft</Company>
-    <Copyright>OdinSoft</Copyright>
   </PropertyGroup>
   
   <ItemGroup>
@@ -25,17 +23,17 @@
 
   <ItemGroup>
     <!-- .js/.css files will be referenced via <script>/<link> tags; other content files will just be included in the app's 'dist' directory without any tags referencing them -->
-    <EmbeddedResource Include="Content\**\*.js" LogicalName="blazor:js:%(RecursiveDir)%(Filename)%(Extension)" />
-    <EmbeddedResource Include="Content\**\*.css" LogicalName="blazor:css:%(RecursiveDir)%(Filename)%(Extension)" />
-    <EmbeddedResource Include="Content\**" Exclude="**\*.js;**\*.css" LogicalName="blazor:file:%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="content\**\*.js" LogicalName="blazor:js:%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="content\**\*.css" LogicalName="blazor:css:%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="content\**" Exclude="**\*.js;**\*.css" LogicalName="blazor:file:%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Content\blazorDBInterop.js" />
+    <None Remove="content\blazorDBInterop.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Content\blazorDBInterop.js">
+    <EmbeddedResource Update="content\blazorDBInterop.js">
       <LogicalName>blazor:js:%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
     </EmbeddedResource>
   </ItemGroup>

@@ -1,5 +1,5 @@
-﻿@inherits BootstrapComponentBase
-@using BootStrap.Net
+﻿@inherits BootStrapComponentBase
+@using BootStrap.Net.util
 
 @inject Microsoft.JSInterop.IJSRuntime JSRuntime
 
@@ -28,7 +28,7 @@
         if (IsOpen)
         {
             var placement = Placement.ToDescriptionString();
-            await new BlazorStrapInterop(JSRuntime).Popper(Target, Id, arrow, placement);
+            await new BootStrapNetInterop(JSRuntime).Popper(Target, Id, arrow, placement);
         }
     }
     private string Id

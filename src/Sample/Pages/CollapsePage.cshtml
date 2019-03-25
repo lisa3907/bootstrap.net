@@ -1,8 +1,6 @@
 ﻿@addTagHelper *, BootStrap.Net
 @page "/collapse"
 
-
-
 <h1>Collapse</h1>
 
 <div class="docs-example">
@@ -14,8 +12,7 @@
     </Collapse>
 </div>
 
-<code>
-    <pre style="background:#000;color:#f8f8f8">
+<code><pre style="background:#000;color:#f8f8f8">
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">Color</span>=<span style="color:#65b042">"Color.Primary"</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"@@onclick"</span>></span>Toggle<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span>
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">Collapse</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@IsOpen"</span>></span>
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Card"</span>></span>
@@ -31,8 +28,7 @@
         StateHasChanged();
     }
 }
-</pre>
-</code>
+</pre></code>
 
 <h3>Accordion example</h3>
 
@@ -62,26 +58,25 @@
         </Card>
     </div>
 </div>
-<code>
-    <pre style="background:#000;color:#f8f8f8"><span style="color:#89bdff">&lt;<span style="color:#89bdff">div</span> <span style="color:#89bdff">class</span>=<span style="color:#65b042">"accordion"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Card"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Header"</span>></span><span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">ButtonType</span>=<span style="color:#65b042">"ButtonType.Button"</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"@@accordianClick1"</span> <span style="color:#89bdff">Color</span>=<span style="color:#65b042">"Color.None"</span> <span style="color:#89bdff">Class</span>=<span style="color:#65b042">"btn-link"</span>></span>Collapsible Group Item #1<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span><span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Collapse</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@IsOpen1"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Text"</span>></span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Collapse</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Card"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Header"</span>></span><span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">ButtonType</span>=<span style="color:#65b042">"ButtonType.Button"</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"@@accordianClick2"</span> <span style="color:#89bdff">Color</span>=<span style="color:#65b042">"Color.None"</span> <span style="color:#89bdff">Class</span>=<span style="color:#65b042">"btn-link"</span>></span>Collapsible Group Item #2<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span><span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Collapse</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@IsOpen2"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Text"</span>></span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Collapse</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Card"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Header"</span>></span><span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">ButtonType</span>=<span style="color:#65b042">"ButtonType.Button"</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"@@accordianClick3"</span> <span style="color:#89bdff">Color</span>=<span style="color:#65b042">"Color.None"</span> <span style="color:#89bdff">Class</span>=<span style="color:#65b042">"btn-link"</span>></span>Collapsible Group Item #3<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span><span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Collapse</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@IsOpen3"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Text"</span>></span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Collapse</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+<code><pre style="background:#000;color:#f8f8f8"><span style="color:#89bdff">&lt;<span style="color:#89bdff">div</span> <span style="color:#89bdff">class</span>=<span style="color:#65b042">"accordion"</span>></span>
+        <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Card"</span>></span>
+            <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Header"</span>></span><span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">ButtonType</span>=<span style="color:#65b042">"ButtonType.Button"</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"@@accordianClick1"</span> <span style="color:#89bdff">Color</span>=<span style="color:#65b042">"Color.None"</span> <span style="color:#89bdff">Class</span>=<span style="color:#65b042">"btn-link"</span>></span>Collapsible Group Item #1<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span><span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+            <span style="color:#89bdff">&lt;<span style="color:#89bdff">Collapse</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@IsOpen1"</span>></span>
+                <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Text"</span>></span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+            <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Collapse</span>></span>
+        <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+        <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Card"</span>></span>
+            <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Header"</span>></span><span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">ButtonType</span>=<span style="color:#65b042">"ButtonType.Button"</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"@@accordianClick2"</span> <span style="color:#89bdff">Color</span>=<span style="color:#65b042">"Color.None"</span> <span style="color:#89bdff">Class</span>=<span style="color:#65b042">"btn-link"</span>></span>Collapsible Group Item #2<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span><span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+            <span style="color:#89bdff">&lt;<span style="color:#89bdff">Collapse</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@IsOpen2"</span>></span>
+                <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Text"</span>></span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+            <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Collapse</span>></span>
+        <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+        <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Card"</span>></span>
+            <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Header"</span>></span><span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">ButtonType</span>=<span style="color:#65b042">"ButtonType.Button"</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"@@accordianClick3"</span> <span style="color:#89bdff">Color</span>=<span style="color:#65b042">"Color.None"</span> <span style="color:#89bdff">Class</span>=<span style="color:#65b042">"btn-link"</span>></span>Collapsible Group Item #3<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span><span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+            <span style="color:#89bdff">&lt;<span style="color:#89bdff">Collapse</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@IsOpen3"</span>></span>
+                <span style="color:#89bdff">&lt;<span style="color:#89bdff">Card</span> <span style="color:#89bdff">CardType</span>=<span style="color:#65b042">"CardType.Text"</span>></span>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
+            <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Collapse</span>></span>
+        <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Card</span>></span>
     <span style="color:#89bdff">&lt;/<span style="color:#89bdff">div</span>></span>
 
 @@functions {
@@ -110,8 +105,7 @@
         StateHasChanged();
     }
 }
-</pre>
-</code>
+</pre></code>
 
 @functions {
     bool IsOpen { get; set; }

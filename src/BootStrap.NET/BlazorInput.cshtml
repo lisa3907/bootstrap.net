@@ -1,6 +1,8 @@
-﻿@inherits BootStrap.Net.BootstrapComponentBase
-@using BootStrap.Net
+﻿@using BootStrap.Net
+@using BootStrap.Net.util
 @using Microsoft.AspNetCore.Components
+
+@inherits BootStrapComponentBase
 
 <DynamicElement Attributes="@UnknownParameters" TagName="@Tag" class="@classname" type="@Type" readonly="@IsReadonly" disabled="@IsDisabled" multiple="@IsMultipleSelect" size="@SelectSize" selectedIndex="@SelectedIndex" value="@Value">
     @ChildContent

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BootStrap.Net
 {
-    public class ColumnBase : BootstrapComponentBase
+    public class ColumnBase : BootStrapComponentBase
     {
         internal string GetColumnClass(string defaultClass = "col")
         {

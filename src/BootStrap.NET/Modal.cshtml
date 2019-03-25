@@ -1,5 +1,5 @@
-﻿@inherits BootstrapComponentBase
-@using BootStrap.Net
+﻿@inherits BootStrapComponentBase
+@using BootStrap.Net.util
 
 @inject Microsoft.JSInterop.IJSRuntime JSRuntime
 
@@ -55,7 +55,7 @@
 
             Task.Run(async () =>
             {
-                await (new BlazorStrapInterop(JSRuntime)).ChangeBody(_isOpen ? "modal-open" : null); //TODO: Change to onRender?
+                await (new BootStrapNetInterop(JSRuntime)).ChangeBody(_isOpen ? "modal-open" : null); //TODO: Change to onRender?
             });
         }
     }

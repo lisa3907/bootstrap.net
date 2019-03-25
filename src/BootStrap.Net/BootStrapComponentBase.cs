@@ -9,7 +9,7 @@ namespace BootStrap.Net
     /// <summary>
     /// The base class for BootStrap.Net components.
     /// </summary>
-    public abstract class BootstrapComponentBase : ComponentBase
+    public abstract class BootStrapComponentBase : ComponentBase
     {
         private bool _hasCalledInit;
         /// <summary>

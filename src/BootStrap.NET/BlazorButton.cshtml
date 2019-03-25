@@ -1,12 +1,13 @@
-﻿@inherits BootStrap.Net.BootstrapComponentBase
-@using BootStrap.Net
-@using BootStrap.Net.Util
+﻿@using BootStrap.Net
+@using BootStrap.Net.util
 @using Microsoft.AspNetCore.Components
+
+@inherits BootStrapComponentBase
 
 <DynamicElement TagName="@Tag" onclick="@Onclick" type="@type" class="@classname" disabled="@disabled" role="button" aria-pressed="@pressed" aria-disabled="@disabled" tabindex="@tab" value="@Value" Attributes="@UnknownParameters">
     @ChildContent
 </DynamicElement>
-
+               
 @functions {
     private string classname
     {
@@ -71,7 +72,7 @@
     [Parameter] private Color Color { get; set; } = Color.Primary;
 
     private ButtonType _buttonType = ButtonType.Button;
-    [Parameter]
+    [Parameter] 
     private ButtonType ButtonType
     {
         get
@@ -81,7 +82,7 @@
         set
         {
             _buttonType = value;
-            switch (_buttonType)
+            switch(_buttonType)
             {
                 case ButtonType.Button:
                     Tag = "button";

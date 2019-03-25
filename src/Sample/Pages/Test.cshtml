@@ -1,4 +1,4 @@
-﻿
+﻿@using BootStrap.Net.util
 @using Microsoft.AspNetCore.Blazor
 @page "/test"
 @addTagHelper *, BootStrap.Net
@@ -11,6 +11,6 @@
     async void onclick(UIMouseEventArgs e)
     {
         Console.WriteLine("onclick");
-        await (new BlazorStrapInterop(JSRuntime)).Log("TEST!");
+        await (new BootStrapNetInterop(JSRuntime)).Log("TEST!");
     }
 }

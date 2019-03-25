@@ -1,8 +1,6 @@
 ﻿@page "/samples/navbars"
 @addTagHelper *, BootStrap.Net
 
-
-
 <Navbar IsExpand="true" IsDark="false" Color="Color.Light">
     <NavbarBrand Href="#" lg="1" xs="3" sm="2" md="2"><Image Src="logo.png" alt="logo" /></NavbarBrand>
     <NavbarToggler onclick="@onclick" />
@@ -38,7 +36,7 @@
         </BlazorNav>
     </Collapse>
 </Navbar>
-
+        
 @functions {
     bool IsOpen = true;
     bool IsOpen2 = false;

@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace BootStrap.Net.Util
+namespace BootStrap.Net.util
 {
-    public class BlazorStrapInterop
+    public class BootStrapNetInterop
     {
         private IJSRuntime JSRuntime { get; set; }
 
-        public BlazorStrapInterop(IJSRuntime jsRuntime)
+        public BootStrapNetInterop(IJSRuntime jsRuntime)
         {
             JSRuntime = jsRuntime;
         }

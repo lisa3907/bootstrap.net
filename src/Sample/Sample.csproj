@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BootStrap.NET\BootStrap.Net.csproj" />
+    <ProjectReference Include="..\BootStrap.Net\BootStrap.Net.csproj" />
   </ItemGroup>
 
 </Project>
