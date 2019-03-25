@@ -15,16 +15,16 @@ namespace BootStrap.Net.util
         }
 
         public Task<bool> ChangeBody(string classname) 
-            => JSRuntime.InvokeAsync<bool>("BootStrap.Net.changeBody", classname);
+            => JSRuntime.InvokeAsync<bool>("blazorStrap.changeBody", classname);
 
         public Task<bool> Log(string message) 
-            => JSRuntime.InvokeAsync<bool>("BootStrap.Net.log", message);
+            => JSRuntime.InvokeAsync<bool>("blazorStrap.log", message);
 
         public Task<bool> Popper(string target, string popper, ElementRef arrow, string placement) 
-            => JSRuntime.InvokeAsync<bool>("BootStrap.Net.popper", target, popper, arrow, placement);
+            => JSRuntime.InvokeAsync<bool>("blazorStrap.popper", target, popper, arrow, placement);
 
         public Task<bool> Tooltip(string target, ElementRef tooltip, ElementRef arrow, string placement) 
-            => JSRuntime.InvokeAsync<bool>("BootStrap.Net.tooltip", target, tooltip, arrow, placement);
+            => JSRuntime.InvokeAsync<bool>("blazorStrap.tooltip", target, tooltip, arrow, placement);
 
         public Task<bool> SetItem(string key, string value, bool session)
         {

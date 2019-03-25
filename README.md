@@ -1,8 +1,8 @@
 # BootStrap.Net - BootStrap Library for .NET
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dnp9i3t6sexv9tpa?svg=true)](https://ci.appveyor.com/project/lisa3907/bootstrap-net)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/BootStrap.Net.svg)](https://www.nuget.org/packages/BootStrap.Net)
-[![License](https://img.shields.io/github/license/lisa3907/BootStrap.Net.svg)](https://github.com/lisa3907/BootStrap.Net/blob/master/LICENSE.txt)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/BootStrapNet.svg)](https://www.nuget.org/packages/BootStrapNet)
+[![License](https://img.shields.io/github/license/lisa3907/bootstrap.net.svg)](https://github.com/lisa3907/bootstrap.net/blob/master/LICENSE.txt)
 
 This project is an extension of [BlazorStrap](https://github.com/chanan/BlazorStrap).
 
@@ -12,22 +12,22 @@ This project started in 2019/03. I plan to update it continuously.
 
 ## Install
 
-You can also clone it into your project directory from [BootStrap.Net GitHub repository](https://github.com/lisa3907/BootStrap.Net):
+You can also clone it into your project directory from [BootStrap.Net GitHub repository](https://github.com/lisa3907/bootstrap.net):
 
 ```shell
-git clone https://github.com/lisa3907/BootStrap.Net.git
+git clone https://github.com/lisa3907/bootstrap.net.git
 ```
 
 
 ## Documentation
 
-Read the [Manual](https://github.com/lisa3907/BootStrap.Net/wiki) for more details.
+Read the [Manual](https://github.com/lisa3907/bootstrap.net/wiki) for more details.
 
 ## Usage
 
 ## Contributing
 
-Please read the [CONTRIBUTING](https://github.com/lisa3907/BootStrap.Net/blob/master/CONTRIBUTING.md) document before making changes that you would like adopted in the code. Also, read the [Manual](https://github.com/lisa3907/BootStrap.Net/wiki) for more details.
+Please read the [CONTRIBUTING](https://github.com/lisa3907/bootstrap.net/blob/master/CONTRIBUTING.md) document before making changes that you would like adopted in the code. Also, read the [Manual](https://github.com/lisa3907/bootstrap.net/wiki) for more details.
 
 ## Support Developer Team
 
