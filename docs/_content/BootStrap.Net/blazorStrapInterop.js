@@ -1,4 +1,4 @@
-﻿window.BootStrap.Net = {
+﻿window.blazorStrap = {
     log: function(message) {
         console.log("message: ", message);
         return true;
