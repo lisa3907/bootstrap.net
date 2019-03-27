@@ -1,9 +1,11 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-* text=auto
+#* text=auto
 
-*.cshtml          text
+src/wwwroot/* linguist-vendored
+
+*.cshtml        text
 *.html          text
 *.css           text
 *.js            text
