@@ -1,5 +1,10 @@
 src/wwwroot/* linguist-vendored
 
+*.css       diff=astextplain
+*.html      diff=astextplain
+*.js        diff=astextplain
+*.cshtml    diff=astextplain
+
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
