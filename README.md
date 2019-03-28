@@ -15,7 +15,7 @@ This project started in 2019/03. I plan to update it continuously.
 You can also clone it into your project directory from [BootStrap.Net GitHub repository](https://github.com/lisa3907/bootstrap.net):
 
 ```shell
-git clone https://github.com/lisa3907/BootStrapNet.git
+git clone https://github.com/lisa3907/bootstrap.net.git
 ```
 
 
@@ -35,7 +35,7 @@ We are investing a significant amount of time into the development of this libra
 
 ### Nuget
 
- > Install-Package BootStrap.Net -Version 0.1.0
+ > Install-Package BootStrapNet -Version 0.1.0
 
 ### Crypto Donation
 
