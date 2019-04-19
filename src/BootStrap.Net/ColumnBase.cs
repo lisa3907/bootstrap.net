@@ -40,7 +40,7 @@ namespace BootStrap.Net
             AppendBoolProperty(sb, "mr-xl-auto", XLMRAuto);
             AppendBoolProperty(sb, "ml-xl-auto", XLMLAuto);
 
-            if (sb.Length == 0) return defaultClass;
+            if (sb.Length == 0) { return defaultClass; }
             else return sb.ToString();
         }
 
