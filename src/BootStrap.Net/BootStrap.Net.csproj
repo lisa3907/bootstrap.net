@@ -13,7 +13,7 @@
     <StartupObject />
     <IsPackable>true</IsPackable>
     <PackageId>BootStrapNet</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.3.0</Version>
     <Authors>SeongAhn Lee</Authors>
     <Title>BootStrap.Net</Title>
     <Description>A bootstrap component library for Blazor</Description>
@@ -25,6 +25,7 @@
     <Copyright></Copyright>
     <PackageLicenseExpression></PackageLicenseExpression>
     <Product>BootStrapNet</Product>
+    <PackageReleaseNotes>upgrade AspNetCore 3.0</PackageReleaseNotes>
   </PropertyGroup>
   
   <ItemGroup>
