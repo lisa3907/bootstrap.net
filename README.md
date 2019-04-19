@@ -35,7 +35,7 @@ We are investing a significant amount of time into the development of this libra
 
 ### Nuget
 
- > Install-Package BootStrapNet -Version 0.1.0
+ > Install-Package BootStrapNet -Version 0.3.0
 
 ### Crypto Donation
 
