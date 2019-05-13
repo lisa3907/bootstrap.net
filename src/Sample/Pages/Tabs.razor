@@ -5,7 +5,7 @@
 
 <div class="docs-example">
     <BlazorNav IsTabs="true">
-         <BlazorNavLink onclick="@onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
+        <BlazorNavLink onclick="@onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
         <BlazorNavLink onclick="@onclick2" IsActive="@(active == 2)">Profile</BlazorNavLink>
         <BlazorNavLink onclick="@onclick3" IsActive="@(active == 3)">Contact</BlazorNavLink>
     </BlazorNav>
@@ -17,14 +17,14 @@
 </div>
 <pre style="background:#000;color:#f8f8f8">
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNav</span> <span style="color:#89bdff">IsTabs</span>></span>
-        <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick1"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>Home<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick2"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>Profile<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick3"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>Contact<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick1"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>Home<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick2"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>Profile<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick3"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>Contact<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
 <span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNav</span>></span>
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabContent</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
 <span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabContent</span>></span>
 @@functions {
     private int active = 1;
@@ -71,20 +71,20 @@
 
 <pre style="background:#000;color:#f8f8f8">
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNav</span> <span style="color:#89bdff">IsPills</span>=<span style="color:#65b042">"true"</span> <span style="color:#89bdff">IsList</span>=<span style="color:#65b042">"true"</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
-        <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick1"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>Home<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
-        <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick2"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>Profile<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
-        <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick3"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>Contact<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-    <span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick1"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>Home<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick2"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>Profile<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick3"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>Contact<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
 <span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNav</span>></span>
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabContent</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
-    <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
 <span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabContent</span>></span>
 </pre>
 
@@ -114,29 +114,28 @@
 </div>
 <pre style="background:#000;color:#f8f8f8">
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">Row</span>></span>
-    <span style="color:#e0c589">&lt;<span style="color:#e0c589">BlazorCol</span> <span style="color:#e0c589">SM</span>=<span style="color:#65b042">"3"</span>></span>
-        <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNav</span> <span style="color:#89bdff">IsPills</span>=<span style="color:#65b042">"true"</span> <span style="color:#89bdff">IsList</span>=<span style="color:#65b042">"true"</span> <span style="color:#89bdff">IsVertical</span>=<span style="color:#65b042">"true"</span>></span>
-            <span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
-                <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick1"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>Home<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-            <span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
-            <span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
-                <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick2"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>Profile<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-            <span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
-            <span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
-                <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick3"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>Contact<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
-            <span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
-        <span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNav</span>></span>
-    <span style="color:#e0c589">&lt;/<span style="color:#e0c589">BlazorCol</span>></span>
-    <span style="color:#e0c589">&lt;<span style="color:#e0c589">BlazorCol</span> <span style="color:#e0c589">SM</span>=<span style="color:#65b042">"9"</span>></span>
-        <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabContent</span>></span>
-            <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
-            <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
-            <span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
-        <span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabContent</span>></span>
-    <span style="color:#e0c589">&lt;/<span style="color:#e0c589">BlazorCol</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">BlazorCol</span> <span style="color:#e0c589">SM</span>=<span style="color:#65b042">"3"</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNav</span> <span style="color:#89bdff">IsPills</span>=<span style="color:#65b042">"true"</span> <span style="color:#89bdff">IsList</span>=<span style="color:#65b042">"true"</span> <span style="color:#89bdff">IsVertical</span>=<span style="color:#65b042">"true"</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick1"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>Home<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick2"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>Profile<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorNavLink</span> <span style="color:#89bdff">onclick</span>=<span style="color:#65b042">"@@onclick3"</span> <span style="color:#89bdff">IsActive</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>Contact<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNavLink</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">NavItem</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorNav</span>></span>
+<span style="color:#e0c589">&lt;/<span style="color:#e0c589">BlazorCol</span>></span>
+<span style="color:#e0c589">&lt;<span style="color:#e0c589">BlazorCol</span> <span style="color:#e0c589">SM</span>=<span style="color:#65b042">"9"</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabContent</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 1)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 2)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;<span style="color:#89bdff">TabPane</span> <span style="color:#89bdff">IsOpen</span>=<span style="color:#65b042">"@@(active == 3)"</span>></span>...<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabPane</span>></span>
+<span style="color:#89bdff">&lt;/<span style="color:#89bdff">TabContent</span>></span>
+<span style="color:#e0c589">&lt;/<span style="color:#e0c589">BlazorCol</span>></span>
 <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Row</span>></span>
 </pre>
-
 
 @functions {
     private int active = 1;

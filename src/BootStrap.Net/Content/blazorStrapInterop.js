@@ -1,13 +1,13 @@
 ﻿window.blazorStrap = {
-    log: function(message) {
+    log: function (message) {
         console.log("message: ", message);
         return true;
     },
-    changeBody: function(classname) {
+    changeBody: function (classname) {
         document.body.className = classname;
         return true;
     },
-    popper: function(target, popperId, arrow, placement) {
+    popper: function (target, popperId, arrow, placement) {
         var reference = document.getElementById(target);
         var popper = document.getElementById(popperId);
         showPopper(reference, popper, arrow, placement);
@@ -44,7 +44,6 @@ function showPopper(reference, popper, arrow, placement) {
                 preventOverflow: {
                     boundary: "scrollParent"
                 }
-
             }
         }
     );

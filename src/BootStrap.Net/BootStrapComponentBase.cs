@@ -12,6 +12,7 @@ namespace BootStrap.Net
     public abstract class BootStrapComponentBase : ComponentBase
     {
         private bool _hasCalledInit;
+
         /// <summary>
         /// A dictionary holding any parameter name/value pairs that do not match
         /// properties declared on the component.

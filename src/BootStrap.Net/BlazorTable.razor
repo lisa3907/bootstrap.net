@@ -2,17 +2,17 @@
 
 @if (IsResponsive)
 {
-    <div class="table-responsive">
-        <DynamicElement Attributes="@UnknownParameters" TagName="table" class="@classname">
-            @ChildContent
-        </DynamicElement>
-    </div>
-}
-@if (!IsResponsive)
-{
+<div class="table-responsive">
     <DynamicElement Attributes="@UnknownParameters" TagName="table" class="@classname">
         @ChildContent
     </DynamicElement>
+</div>
+}
+@if (!IsResponsive)
+{
+<DynamicElement Attributes="@UnknownParameters" TagName="table" class="@classname">
+    @ChildContent
+</DynamicElement>
 }
 
 @functions {

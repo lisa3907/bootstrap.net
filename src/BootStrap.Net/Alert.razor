@@ -2,15 +2,15 @@
 
 @if (IsOpen)
 {
-    <DynamicElement TagName="div" class="@classname" role="alert" Attributes="@UnknownParameters">
-        @ChildContent
-        @if (IsDismissible)
+<DynamicElement TagName="div" class="@classname" role="alert" Attributes="@UnknownParameters">
+    @ChildContent
+    @if (IsDismissible)
         {
-            <button onclick="@onclick" type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+    <button onclick="@onclick" type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
         }
-    </DynamicElement>
+</DynamicElement>
 }
 
 @functions {
@@ -30,7 +30,6 @@
     /// Gets or sets an action to be invoked when the alert is dismissed.
     /// </summary>
     [Parameter] private Action OnDismiss { get; set; }
-
 
     private bool IsOpen { get; set; } = true;
 

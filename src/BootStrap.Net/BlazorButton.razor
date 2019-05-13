@@ -7,7 +7,7 @@
 <DynamicElement TagName="@Tag" onclick="@Onclick" type="@type" class="@classname" disabled="@disabled" role="button" aria-pressed="@pressed" aria-disabled="@disabled" tabindex="@tab" value="@Value" Attributes="@UnknownParameters">
     @ChildContent
 </DynamicElement>
-               
+
 @functions {
     private string classname
     {
@@ -72,7 +72,7 @@
     [Parameter] private Color Color { get; set; } = Color.Primary;
 
     private ButtonType _buttonType = ButtonType.Button;
-    [Parameter] 
+    [Parameter]
     private ButtonType ButtonType
     {
         get
