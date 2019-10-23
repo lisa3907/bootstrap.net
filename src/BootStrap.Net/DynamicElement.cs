@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.RenderTree;
+using Microsoft.AspNetCore.Components.Rendering;
+using Microsoft.AspNetCore.Components.Web;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -32,9 +33,9 @@ namespace BootStrap.Net
         }
 
         /// <summary>
-        /// Gets the <see cref="Microsoft.AspNetCore.Components.ElementRef"/>.
+        /// Gets the <see cref="Microsoft.AspNetCore.Components.ElementReference"/>.
         /// </summary>
-        public ElementRef ElementRef
+        public ElementReference ElementRef
         {
             get; private set;
         }
@@ -43,10 +44,10 @@ namespace BootStrap.Net
         private RenderFragment _childContent;
 
         /// <inheritdoc />
-        public override Task SetParametersAsync(ParameterCollection parameters)
+        public override Task SetParametersAsync(ParameterView parameters)
         {
             _attributesToRender = (IDictionary<string, object>)parameters.ToDictionary();
-            _childContent = GetAndRemove<RenderFragment>(_attributesToRender, RenderTreeBuilder.ChildContent);
+            _childContent = GetAndRemove<RenderFragment>(_attributesToRender, "ChildContent");
 
             TagName = GetAndRemove<string>(_attributesToRender, nameof(TagName))
                 ?? throw new InvalidOperationException($"No value was supplied for required parameter '{nameof(TagName)}'.");
@@ -71,7 +72,7 @@ namespace BootStrap.Net
                     }
                 }
             }
-            return base.SetParametersAsync(ParameterCollection.Empty);
+            return base.SetParametersAsync(ParameterView.Empty);
         }
 
         private static T GetAndRemove<T>(IDictionary<string, object> values, string key)
@@ -90,7 +91,7 @@ namespace BootStrap.Net
         protected override void BuildRenderTree(RenderTreeBuilder builder)
         {
             base.BuildRenderTree(builder);
-            builder.OpenElement(0, TagName);
+            builder?.OpenElement(0, TagName);
 
             foreach (var param in _attributesToRender)
             {
@@ -107,7 +108,7 @@ namespace BootStrap.Net
                      * Handling EventCallback<UIEventArgs> altogether will not
                      * work.
                      */
-                    case EventCallback<UIMouseEventArgs> ec:
+                    case EventCallback<MouseEventArgs> ec:
                         builder.AddAttribute(1, param.Key, ec);
                         break;
 

@@ -32,11 +32,11 @@
                 else { return null; }
             }
         }
-    [Parameter] private bool IsDivider { get; set; }
-    [Parameter] private bool IsDisabled { get; set; }
-    [Parameter] private bool IsButton { get; set; }
-    [Parameter] private bool IsActive { get; set; }
-    [Parameter] private Action<UIMouseEventArgs> Onclick { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public bool IsDivider { get; set; }
+    [Parameter] public bool IsDisabled { get; set; }
+    [Parameter] public bool IsButton { get; set; }
+    [Parameter] public bool IsActive { get; set; }
+    [Parameter] public Action<MouseEventArgs> Onclick { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

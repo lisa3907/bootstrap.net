@@ -1,18 +1,18 @@
 ﻿@inherits BootStrapComponentBase
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
 @inject Microsoft.JSInterop.IJSRuntime JSRuntime
 
 @if (IsOpen)
 {
-<DynamicElement Id="@Id" Attributes="@UnknownParameters" TagName="div" class="@classname" role="tooltip" onclick="@onclick">
+<DynamicElement Id="@Id" Attributes="@UnknownParameters" TagName="div" class="@classname" role="tooltip" @onclick="onclick">
     <div ref="arrow" class="arrow"></div>
     @ChildContent
 </DynamicElement>
 }
 
 @functions {
-    private ElementRef arrow;
+    private ElementReference arrow;
     private string classname
     {
         get
@@ -22,8 +22,9 @@
             return $"popover {placement} {open} {Class}";
         }
     }
-    [Parameter] private bool IsOpen { get; set; }
-    protected override async void OnAfterRender()
+    [Parameter] public bool IsOpen { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (IsOpen)
         {
@@ -31,6 +32,7 @@
             await new BootStrapNetInterop(JSRuntime).Popper(Target, Id, arrow, placement);
         }
     }
+
     private string Id
     {
         get
@@ -38,11 +40,11 @@
             return Target + "-popover";
         }
     }
-    [Parameter] private Placement Placement { get; set; } = Placement.Auto;
-    [Parameter] private string Target { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private string Style { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public Placement Placement { get; set; } = Placement.Auto;
+    [Parameter] public string Target { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public string Style { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 
     private void onclick()
     {

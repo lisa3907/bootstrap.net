@@ -14,8 +14,8 @@
             return $"{check} {row} {Class}";
         }
     }
-    [Parameter] private bool IsRow { get; set; }
-    [Parameter] private bool IsCheck { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public bool IsRow { get; set; }
+    [Parameter] public bool IsCheck { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

@@ -1,7 +1,7 @@
 ﻿@inherits BootStrapComponentBase
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
-<DynamicElement Attributes="@UnknownParameters" TagName="@Tag" class="@classname" onclick="@_onclick" disabled="@IsDisabled">
+<DynamicElement Attributes="@UnknownParameters" TagName="@Tag" class="@classname" @onclick="_onclick" disabled="@IsDisabled">
     @ChildContent
 </DynamicElement>
 
@@ -34,14 +34,15 @@
             }
         }
     }
-    [Parameter] private bool IsActive { get; set; }
-    [Parameter] private bool IsDisabled { get; set; }
-    [Parameter] private ListGroupType ListGroupType { get; set; } = ListGroupType.List;
-    [Parameter] private Action<UIMouseEventArgs> OnClick { get; set; }
-    [Parameter] private Color Color { get; set; } = Color.None;
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
-    private void _onclick(UIMouseEventArgs e)
+    [Parameter] public bool IsActive { get; set; }
+    [Parameter] public bool IsDisabled { get; set; }
+    [Parameter] public ListGroupType ListGroupType { get; set; } = ListGroupType.List;
+    [Parameter] public Action<MouseEventArgs> OnClick { get; set; }
+    [Parameter] public Color Color { get; set; } = Color.None;
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+    private void _onclick(MouseEventArgs e)
     {
         if (OnClick != null) { OnClick(e); }
     }

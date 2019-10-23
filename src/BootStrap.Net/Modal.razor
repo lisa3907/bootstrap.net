@@ -1,11 +1,11 @@
 ﻿@inherits BootStrapComponentBase
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
 @inject Microsoft.JSInterop.IJSRuntime JSRuntime
 
-<DynamicElement Attributes="@UnknownParameters" style="@styles" TagName="div" class="@classname" tabindex="-1" role="dialog" onclick="@onclick">
+<DynamicElement Attributes="@UnknownParameters" style="@styles" TagName="div" class="@classname" tabindex="-1" role="dialog" @onclick="onclick">
     <div class="@innerClassname" role="document">
-        <div class="modal-content" onclick="@dontclick">
+        <div class="modal-content" @onclick="dontclick">
             @ChildContent
         </div>
     </div>
@@ -43,7 +43,7 @@
             }
         }
     private bool _isOpen;
-    [Parameter] private bool IsOpen
+    [Parameter] public bool IsOpen
     {
         get
         {
@@ -59,11 +59,11 @@
             });
         }
     }
-    [Parameter] private bool IsCentered { get; set; }
-    [Parameter] private Size Size { get; set; } = Size.None;
-    [Parameter] private string Class { get; set; }
-    [Parameter] private string Style { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public bool IsCentered { get; set; }
+    [Parameter] public Size Size { get; set; } = Size.None;
+    [Parameter] public string Class { get; set; }
+    [Parameter] public string Style { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 
     private bool _dontclickWasClicked;
     void onclick()
@@ -73,7 +73,7 @@
         StateHasChanged();
     }
 
-    void dontclick(UIMouseEventArgs e)
+    void dontclick(MouseEventArgs e)
     {
         _dontclickWasClicked = true;
     }

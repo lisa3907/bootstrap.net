@@ -1,4 +1,4 @@
-﻿@using BootStrap.Net.util
+﻿@using BootStrap.Net.Util
 @using Microsoft.AspNetCore.Blazor
 @page "/test"
 @*@addTagHelper *, BootStrap.Net*@
@@ -8,7 +8,7 @@
 <BlazorButton onclick="@onclick">Test</BlazorButton>
 
 @functions {
-    async void onclick(UIMouseEventArgs e)
+    async void onclick(MouseEventArgs e)
     {
         Console.WriteLine("onclick");
         await (new BootStrapNetInterop(JSRuntime)).Log("TEST!");

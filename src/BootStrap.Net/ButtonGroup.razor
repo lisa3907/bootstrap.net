@@ -1,5 +1,5 @@
 ﻿@inherits BootStrapComponentBase
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
 <DynamicElement Attributes="@UnknownParameters" TagName="div" class="@classname">
     @ChildContent
@@ -19,12 +19,12 @@
             return $"{baseclass} {size} {toggle} {direction} {open} {Class}";
         }
     }
-    [Parameter] private bool IsOpen { get; set; }
-    [Parameter] private bool IsToggle { get; set; }
-    [Parameter] private bool IsToolbar { get; set; }
-    [Parameter] private bool IsVertical { get; set; }
-    [Parameter] private DropdownDirection DropdownDirection { get; set; } = DropdownDirection.Down;
-    [Parameter] private Size Size { get; set; } = Size.None;
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public bool IsOpen { get; set; }
+    [Parameter] public bool IsToggle { get; set; }
+    [Parameter] public bool IsToolbar { get; set; }
+    [Parameter] public bool IsVertical { get; set; }
+    [Parameter] public DropdownDirection DropdownDirection { get; set; } = DropdownDirection.Down;
+    [Parameter] public Size Size { get; set; } = Size.None;
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

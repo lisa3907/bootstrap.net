@@ -1,6 +1,6 @@
 ﻿@*@addTagHelper *, BootStrap.Net*@
 @page "/modals"
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
 <h1>Modals</h1>
 
@@ -50,7 +50,7 @@
 <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Modal</span>></span>
 @@functions {
     bool IsOpen { get; set; }
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         IsOpen = !IsOpen;
         StateHasChanged();
@@ -132,25 +132,25 @@
 
 @functions {
     bool IsOpen { get; set; }
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         IsOpen = !IsOpen;
         StateHasChanged();
     }
     bool IsOpen2 { get; set; }
-    void onclick2(UIMouseEventArgs e)
+    void onclick2(MouseEventArgs e)
     {
         IsOpen2 = !IsOpen2;
         StateHasChanged();
     }
     bool IsOpen3 { get; set; }
-    void onclick3(UIMouseEventArgs e)
+    void onclick3(MouseEventArgs e)
     {
         IsOpen3 = !IsOpen3;
         StateHasChanged();
     }
     bool IsOpen4 { get; set; }
-    void onclick4(UIMouseEventArgs e)
+    void onclick4(MouseEventArgs e)
     {
         IsOpen4 = !IsOpen4;
         StateHasChanged();

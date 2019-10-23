@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace BootStrap.Net.util
+namespace BootStrap.Net.Util
 {
     public static class EnumExtensions
     {

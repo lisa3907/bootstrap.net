@@ -14,9 +14,9 @@
             return $"carousel-item {active} {Class}";
         }
     }
-    [Parameter] private string src { get; set; }
-    [Parameter] private string alt { get; set; }
-    [Parameter] private bool IsActive { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public string src { get; set; }
+    [Parameter] public string alt { get; set; }
+    [Parameter] public bool IsActive { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

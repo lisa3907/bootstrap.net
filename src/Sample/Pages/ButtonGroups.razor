@@ -123,7 +123,7 @@
 
 @@functions {
     bool IsOpen { get; set; }
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         IsOpen = !IsOpen;
         StateHasChanged();
@@ -167,14 +167,14 @@
 
 @functions {
     bool IsOpen { get; set; }
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         IsOpen = !IsOpen;
         StateHasChanged();
     }
 
     bool IsOpen1 { get; set; }
-    void onclick1(UIMouseEventArgs e)
+    void onclick1(MouseEventArgs e)
     {
         IsOpen1 = !IsOpen1;
         StateHasChanged();

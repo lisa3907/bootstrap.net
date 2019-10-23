@@ -36,7 +36,7 @@
     <pre style="background:#000;color:#f8f8f8">
 <span style="color:#89bdff">&lt;<span style="color:#89bdff">BlazorButton</span> <span style="color:#89bdff">OnClick</span>=<span style="color:#65b042">"<span>@@</span>onclick"</span>></span>Click Me<span style="color:#89bdff">&lt;/<span style="color:#89bdff">BlazorButton</span>></span>
 <span>@@</span>functions {
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         Console.WriteLine(<span style="color:#65b042">"Button was clicked!"</span>);
     }
@@ -155,7 +155,7 @@
 <Alert Color="Color.Info">Checkboxes and Radio aren't support yet by BootStrap.Net</Alert>
 
 @functions {
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         Console.WriteLine("Button was clicked!");
     }

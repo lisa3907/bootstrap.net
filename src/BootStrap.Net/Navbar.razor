@@ -1,5 +1,5 @@
 ﻿@inherits BootStrapComponentBase
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
 <DynamicElement Attributes="@UnknownParameters" TagName="nav" class="@classname">
     @ChildContent
@@ -20,12 +20,12 @@
         }
     }
 
-    [Parameter] private Color Color { get; set; } = Color.None;
-    [Parameter] private bool IsDark { get; set; }
-    [Parameter] private bool IsExpand { get; set; }
-    [Parameter] private bool IsFixedTop { get; set; }
-    [Parameter] private bool IsFixedBottom { get; set; }
-    [Parameter] private bool IsStickyTop { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public Color Color { get; set; } = Color.None;
+    [Parameter] public bool IsDark { get; set; }
+    [Parameter] public bool IsExpand { get; set; }
+    [Parameter] public bool IsFixedTop { get; set; }
+    [Parameter] public bool IsFixedBottom { get; set; }
+    [Parameter] public bool IsStickyTop { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

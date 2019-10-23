@@ -23,7 +23,7 @@
 
 @@functions {
     bool IsOpen { get; set; }
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         IsOpen = !IsOpen;
         StateHasChanged();
@@ -86,21 +86,21 @@
     bool IsOpen1 { get; set; } = true;
     bool IsOpen2 { get; set; }
     bool IsOpen3 { get; set; }
-    void accordianClick1(UIMouseEventArgs e)
+    void accordianClick1(MouseEventArgs e)
     {
         IsOpen1 = <span style="color:#3387cc">true</span>;
         IsOpen2 = <span style="color:#3387cc">false</span>;
         IsOpen3 = <span style="color:#3387cc">false</span>;
         StateHasChanged();
     }
-    void accordianClick2(UIMouseEventArgs e)
+    void accordianClick2(MouseEventArgs e)
     {
         IsOpen1 = <span style="color:#3387cc">false</span>;
         IsOpen2 = <span style="color:#3387cc">true</span>;
         IsOpen3 = <span style="color:#3387cc">false</span>;
         StateHasChanged();
     }
-    void accordianClick3(UIMouseEventArgs e)
+    void accordianClick3(MouseEventArgs e)
     {
         IsOpen1 = <span style="color:#3387cc">false</span>;
         IsOpen2 = <span style="color:#3387cc">false</span>;
@@ -113,7 +113,7 @@
 
 @functions {
     bool IsOpen { get; set; }
-    void onclick(UIMouseEventArgs e)
+    void onclick(MouseEventArgs e)
     {
         IsOpen = !IsOpen;
         StateHasChanged();
@@ -122,21 +122,21 @@
     bool IsOpen1 { get; set; } = true;
     bool IsOpen2 { get; set; }
     bool IsOpen3 { get; set; }
-    void accordianClick1(UIMouseEventArgs e)
+    void accordianClick1(MouseEventArgs e)
     {
         IsOpen1 = true;
         IsOpen2 = false;
         IsOpen3 = false;
         StateHasChanged();
     }
-    void accordianClick2(UIMouseEventArgs e)
+    void accordianClick2(MouseEventArgs e)
     {
         IsOpen1 = false;
         IsOpen2 = true;
         IsOpen3 = false;
         StateHasChanged();
     }
-    void accordianClick3(UIMouseEventArgs e)
+    void accordianClick3(MouseEventArgs e)
     {
         IsOpen1 = false;
         IsOpen2 = false;

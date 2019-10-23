@@ -1,5 +1,5 @@
 ﻿@inherits BootStrapComponentBase
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
 <DynamicElement Attributes="@UnknownParameters" TagName="td" class="@classname">
     @ChildContent
@@ -14,7 +14,7 @@
             return $"{color} {Class}";
         }
     }
-    [Parameter] private Color Color { get; set; } = Color.None;
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public Color Color { get; set; } = Color.None;
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

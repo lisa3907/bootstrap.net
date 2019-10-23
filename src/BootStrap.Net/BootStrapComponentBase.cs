@@ -20,7 +20,7 @@ namespace BootStrap.Net
         protected IDictionary<string, object> UnknownParameters { get; } = new Dictionary<string, object>();
 
         /// <inheritdoc />
-        public override async Task SetParametersAsync(ParameterCollection parameters)
+        public override async Task SetParametersAsync(ParameterView parameters)
         {
             UnknownParameters.Clear();
 
@@ -39,11 +39,11 @@ namespace BootStrap.Net
             if (!_hasCalledInit)
             {
                 _hasCalledInit = true;
-                OnInit();
+                OnInitialized();
 
                 // If you override OnInitAsync and return a nonnull task, then by default
                 // we automatically re-render once that task completes.
-                var initTask = OnInitAsync();
+                var initTask = OnInitializedAsync();
                 if (initTask != null && initTask.Status != TaskStatus.RanToCompletion)
                 {
                     await initTask.ContinueWith(ContinueAfterLifecycleTask);

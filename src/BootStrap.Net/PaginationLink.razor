@@ -51,8 +51,8 @@
                 return $"page-link {Class}";
             }
         }
-    [Parameter] private string Href { get; set; }
-    [Parameter] private PaginationLinkType PaginationLinkType { get; set; } = PaginationLinkType.Custom;
+    [Parameter] public string Href { get; set; }
+    [Parameter] public PaginationLinkType PaginationLinkType { get; set; } = PaginationLinkType.Custom;
     private string label
     {
         get
@@ -87,6 +87,6 @@
             return null;
         }
     }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }
