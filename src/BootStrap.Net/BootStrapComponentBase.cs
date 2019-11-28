@@ -41,7 +41,7 @@ namespace BootStrap.Net
                 _hasCalledInit = true;
                 OnInitialized();
 
-                // If you override OnInitAsync and return a nonnull task, then by default
+                // If you override OnInitializedAsync and return a nonnull task, then by default
                 // we automatically re-render once that task completes.
                 var initTask = OnInitializedAsync();
                 if (initTask != null && initTask.Status != TaskStatus.RanToCompletion)

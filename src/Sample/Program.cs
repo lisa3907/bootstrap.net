@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Blazor.Hosting;
-
-namespace Sample
+﻿namespace Sample
 {
     internal class Program
     {
