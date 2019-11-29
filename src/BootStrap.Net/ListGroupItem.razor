@@ -44,6 +44,6 @@
 
     private void _onclick(MouseEventArgs e)
     {
-        if (OnClick != null) { OnClick(e); }
+        OnClick?.Invoke(e);
     }
 }

@@ -1,7 +1,7 @@
 ﻿@inherits BootStrapComponentBase
 @using BootStrap.Net.Util
 
-<DynamicElement Attributes="@UnknownParameters" TagName="@Tag" class="@classname" type="@Type" aria-haspopup="true" aria-expanded="@IsOpen" onclick="@Onclick">
+<DynamicElement Attributes="@UnknownParameters" TagName="@Tag" class="@classname" type="@Type" aria-haspopup="true" aria-expanded="@IsOpen" @onclick="Onclick">
     @ChildContent
 </DynamicElement>
 

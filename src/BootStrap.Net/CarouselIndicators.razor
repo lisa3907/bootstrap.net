@@ -29,7 +29,7 @@
         set
         {
             _clickEventActiveIndex = value;
-            ActiveIndexChanged(value);
+            ActiveIndexChanged?.Invoke(value);
         }
     }
 }

@@ -5,9 +5,9 @@
 
 <div class="docs-example">
     <BlazorNav IsTabs="true">
-        <BlazorNavLink onclick="@onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
-        <BlazorNavLink onclick="@onclick2" IsActive="@(active == 2)">Profile</BlazorNavLink>
-        <BlazorNavLink onclick="@onclick3" IsActive="@(active == 3)">Contact</BlazorNavLink>
+        <BlazorNavLink @onclick="onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
+        <BlazorNavLink @onclick="onclick2" IsActive="@(active == 2)">Profile</BlazorNavLink>
+        <BlazorNavLink @onclick="onclick3" IsActive="@(active == 3)">Contact</BlazorNavLink>
     </BlazorNav>
     <TabContent>
         <TabPane IsOpen="@(active == 1)">Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.</TabPane>
@@ -53,13 +53,13 @@
 <div class="docs-example">
     <BlazorNav IsPills="true" IsList="true">
         <NavItem>
-            <BlazorNavLink onclick="@onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
+            <BlazorNavLink @onclick="onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
         </NavItem>
         <NavItem>
-            <BlazorNavLink onclick="@onclick2" IsActive="@(active == 2)">Profile</BlazorNavLink>
+            <BlazorNavLink @onclick="onclick2" IsActive="@(active == 2)">Profile</BlazorNavLink>
         </NavItem>
         <NavItem>
-            <BlazorNavLink onclick="@onclick3" IsActive="@(active == 3)">Contact</BlazorNavLink>
+            <BlazorNavLink @onclick="onclick3" IsActive="@(active == 3)">Contact</BlazorNavLink>
         </NavItem>
     </BlazorNav>
     <TabContent>
@@ -93,13 +93,13 @@
         <BlazorCol SM="3">
             <BlazorNav IsPills="true" IsList="true" IsVertical="true">
                 <NavItem>
-                    <BlazorNavLink onclick="@onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
+                    <BlazorNavLink @onclick="onclick1" IsActive="@(active == 1)">Home</BlazorNavLink>
                 </NavItem>
                 <NavItem>
-                    <BlazorNavLink onclick="@onclick2" IsActive="@(active == 2)">Profile</BlazorNavLink>
+                    <BlazorNavLink @onclick="onclick2" IsActive="@(active == 2)">Profile</BlazorNavLink>
                 </NavItem>
                 <NavItem>
-                    <BlazorNavLink onclick="@onclick3" IsActive="@(active == 3)">Contact</BlazorNavLink>
+                    <BlazorNavLink @onclick="onclick3" IsActive="@(active == 3)">Contact</BlazorNavLink>
                 </NavItem>
             </BlazorNav>
         </BlazorCol>

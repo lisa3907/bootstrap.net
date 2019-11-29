@@ -10,7 +10,7 @@
 <div class="docs-example">
     <Navbar IsExpand="true" IsDark="false" Color="Color.Light">
         <NavbarBrand Href="#">Navbar</NavbarBrand>
-        <NavbarToggler onclick="@onclick" />
+        <NavbarToggler @onclick="onclick" />
         <Collapse isOpen="@IsOpen" IsNavbar="true">
             <BlazorNav IsList="true" Class="mr-auto" IsNavbar="true">
                 <NavItem>
@@ -23,7 +23,7 @@
                     <BlazorNavLink IsDisabled="true" Href="#">Disabled</BlazorNavLink>
                 </NavItem>
                 <NavItem IsDropdown="true">
-                    <DropdownToggle onclick="@onclick2" IsOpen="@IsOpen2" Color="Color.Light">Dropdown link</DropdownToggle>
+                    <DropdownToggle @onclick="onclick2" IsOpen="@IsOpen2" Color="Color.Light">Dropdown link</DropdownToggle>
                     <DropdownMenu IsOpen="@IsOpen2">
                         <DropdownItem Href="#">Action</DropdownItem>
                         <DropdownItem Href="#">Another Action</DropdownItem>

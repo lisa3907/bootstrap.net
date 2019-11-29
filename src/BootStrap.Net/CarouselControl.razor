@@ -50,6 +50,6 @@
             else { ActiveIndex = ActiveIndex + 1; }
 
         }
-        ActiveIndexChanged(ActiveIndex);
+        ActiveIndexChanged?.Invoke(ActiveIndex);
     }
 }

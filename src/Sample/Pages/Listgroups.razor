@@ -118,7 +118,7 @@
 <h3>Supplying OnClick Handler</h3>
 <div class="docs-example">
     <ListGroup ListGroupType="ListGroupType.Button">
-        <ListGroupItem ListGroupType="ListGroupType.Button" OnClick="@onclick">Click me</ListGroupItem>
+        <ListGroupItem ListGroupType="ListGroupType.Button" @onclick="onclick">Click me</ListGroupItem>
     </ListGroup>
 </div>
 <code>
@@ -306,10 +306,10 @@
     <Row>
         <BlazorCol XS="4">
             <ListGroup ListGroupType="ListGroupType.Link">
-                <ListGroupItem OnClick="@onclick1" Class="@(active == 1 ? "active" : null)" ListGroupType="ListGroupType.Button">Home</ListGroupItem>
-                <ListGroupItem OnClick="@onclick2" Class="@(active == 2 ? "active" : null)" ListGroupType="ListGroupType.Button">Settings</ListGroupItem>
-                <ListGroupItem OnClick="@onclick3" Class="@(active == 3 ? "active" : null)" ListGroupType="ListGroupType.Button">Profile</ListGroupItem>
-                <ListGroupItem OnClick="@onclick4" Class="@(active == 4 ? "active" : null)" ListGroupType="ListGroupType.Button">Messages</ListGroupItem>
+                <ListGroupItem @onclick="onclick1" Class="@(active == 1 ? "active" : null)" ListGroupType="ListGroupType.Button">Home</ListGroupItem>
+                <ListGroupItem @onclick="onclick2" Class="@(active == 2 ? "active" : null)" ListGroupType="ListGroupType.Button">Settings</ListGroupItem>
+                <ListGroupItem @onclick="onclick3" Class="@(active == 3 ? "active" : null)" ListGroupType="ListGroupType.Button">Profile</ListGroupItem>
+                <ListGroupItem @onclick="onclick4" Class="@(active == 4 ? "active" : null)" ListGroupType="ListGroupType.Button">Messages</ListGroupItem>
             </ListGroup>
         </BlazorCol>
         <BlazorCol XS="8">

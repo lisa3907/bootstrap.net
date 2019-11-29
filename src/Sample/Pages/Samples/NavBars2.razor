@@ -7,7 +7,7 @@
             <BlazorCol LG="1" XS="3" SM="2" MD="2" Class="logo"><a href="/"><img src="/logo.png" alt="" /></a></BlazorCol>
             <BlazorCol LG="3" XS="9" SM="5" MD="3" Class="selecttopic">
                 <Dropdown IsOpen="@IsOpen">
-                    <DropdownToggle onclick="@onclick">Borderlands 2 <b class="caret"></b></DropdownToggle>
+                    <DropdownToggle @onclick="onclick">Borderlands 2 <b class="caret"></b></DropdownToggle>
                     <DropdownMenu IsOpen="@IsOpen">
                         <DropdownItem Href="#">Borderlands 1</DropdownItem>
                         <DropdownItem Href="#">Borderlands 2</DropdownItem>
@@ -33,7 +33,7 @@
             </BlazorCol>
             <div class="env float-left"><i class="fa fa-envelope"></i></div>
             <Dropdown IsOpen="@IsOpen2" Class="avatar float-left">
-                <DropdownToggle onclick="@onclick2"><img src="/avatar.png" alt="" /> <b class="caret"></b></DropdownToggle>
+                <DropdownToggle @onclick="onclick2"><img src="/avatar.png" alt="" /> <b class="caret"></b></DropdownToggle>
                 <div class="status-green"></div>
                 <DropdownMenu IsOpen="@IsOpen2">
                     <DropdownItem Href="#">My Profile</DropdownItem>

@@ -5,7 +5,7 @@
 
 @inject IJSRuntime JSRuntime
 
-<BlazorButton onclick="@onclick">Test</BlazorButton>
+<BlazorButton @onclick="onclick">Test</BlazorButton>
 
 @functions {
     async void onclick(MouseEventArgs e)

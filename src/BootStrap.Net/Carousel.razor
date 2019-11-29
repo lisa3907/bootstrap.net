@@ -41,7 +41,7 @@
         if (ActiveIndex == NumberOfItems - 1) { ActiveIndex = 0; }
         else { ActiveIndex = ActiveIndex + 1; }
 
-        ActiveIndexChanged(ActiveIndex);
+        ActiveIndexChanged?.Invoke(ActiveIndex);
     }
 
     private void onmouseover()

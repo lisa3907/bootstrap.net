@@ -28,13 +28,13 @@
 
 <h3>Live Demo</h3>
 <div class="docs-example">
-    <BlazorButton Color="Color.Primary" OnClick="@onclick">Launch demo modal</BlazorButton>
+    <BlazorButton Color="Color.Primary" @onClick="onclick">Launch demo modal</BlazorButton>
     <Modal IsOpen="@IsOpen">
-        <ModalHeader OnClick="@onclick">Modal title</ModalHeader>
+        <ModalHeader @onClick="onclick">Modal title</ModalHeader>
         <ModalBody><p>Modal body text goes here.</p></ModalBody>
         <ModalFooter>
-            <BlazorButton Color="Color.Secondary" OnClick="@onclick">Close</BlazorButton>
-            <BlazorButton Color="Color.Primary" OnClick="@onclick">Save Changes</BlazorButton>
+            <BlazorButton Color="Color.Secondary" @onClick="onclick">Close</BlazorButton>
+            <BlazorButton Color="Color.Primary" @onClick="onclick">Save Changes</BlazorButton>
         </ModalFooter>
     </Modal>
 </div>
@@ -50,7 +50,7 @@
 <span style="color:#89bdff">&lt;/<span style="color:#89bdff">Modal</span>></span>
 @@functions {
     bool IsOpen { get; set; }
-    void onclick(MouseEventArgs e)
+    private void onclick()
     {
         IsOpen = !IsOpen;
         StateHasChanged();
@@ -61,13 +61,13 @@
 
 <h3>Vertically Centered</h3>
 <div class="docs-example">
-    <BlazorButton Color="Color.Primary" OnClick="@onclick2">Launch demo modal</BlazorButton>
+    <BlazorButton Color="Color.Primary" @onClick="onclick2">Launch demo modal</BlazorButton>
     <Modal IsOpen="@IsOpen2" IsCentered="true">
-        <ModalHeader OnClick="@onclick2">Modal title</ModalHeader>
+        <ModalHeader @onClick="onclick2">Modal title</ModalHeader>
         <ModalBody><p>Modal body text goes here.</p></ModalBody>
         <ModalFooter>
-            <BlazorButton Color="Color.Secondary" OnClick="@onclick2">Close</BlazorButton>
-            <BlazorButton Color="Color.Primary" OnClick="@onclick2">Save Changes</BlazorButton>
+            <BlazorButton Color="Color.Secondary" @onClick="onclick2">Close</BlazorButton>
+            <BlazorButton Color="Color.Primary" @onClick="onclick2">Save Changes</BlazorButton>
         </ModalFooter>
     </Modal>
 </div>
@@ -88,22 +88,22 @@
 <h3>Sizes</h3>
 
 <div class="docs-example">
-    <BlazorButton Color="Color.Primary" OnClick="@onclick3">Large modal</BlazorButton>
+    <BlazorButton Color="Color.Primary" @onClick="onclick3">Large modal</BlazorButton>
     <Modal IsOpen="@IsOpen3" Size="Size.Large">
-        <ModalHeader OnClick="@onclick3">Modal title</ModalHeader>
+        <ModalHeader @onClick="onclick3">Modal title</ModalHeader>
         <ModalBody><p>Modal body text goes here.</p></ModalBody>
         <ModalFooter>
-            <BlazorButton Color="Color.Secondary" OnClick="@onclick3">Close</BlazorButton>
-            <BlazorButton Color="Color.Primary" OnClick="@onclick3">Save Changes</BlazorButton>
+            <BlazorButton Color="Color.Secondary" @onClick="onclick3">Close</BlazorButton>
+            <BlazorButton Color="Color.Primary" @onClick="onclick3">Save Changes</BlazorButton>
         </ModalFooter>
     </Modal>
-    <BlazorButton Color="Color.Primary" OnClick="@onclick4">Small modal</BlazorButton>
+    <BlazorButton Color="Color.Primary" @onClick="onclick4">Small modal</BlazorButton>
     <Modal IsOpen="@IsOpen4" Size="Size.Small">
-        <ModalHeader OnClick="@onclick4">Modal title</ModalHeader>
+        <ModalHeader @onClick="onclick4">Modal title</ModalHeader>
         <ModalBody><p>Modal body text goes here.</p></ModalBody>
         <ModalFooter>
-            <BlazorButton Color="Color.Secondary" OnClick="@onclick4">Close</BlazorButton>
-            <BlazorButton Color="Color.Primary" OnClick="@onclick4">Save Changes</BlazorButton>
+            <BlazorButton Color="Color.Secondary" @onclick="onclick4">Close</BlazorButton>
+            <BlazorButton Color="Color.Primary" @onClick="onclick4">Save Changes</BlazorButton>
         </ModalFooter>
     </Modal>
 </div>
@@ -132,25 +132,25 @@
 
 @functions {
     bool IsOpen { get; set; }
-    void onclick(MouseEventArgs e)
+    private void onclick()
     {
         IsOpen = !IsOpen;
         StateHasChanged();
     }
     bool IsOpen2 { get; set; }
-    void onclick2(MouseEventArgs e)
+    private void onclick2()
     {
         IsOpen2 = !IsOpen2;
         StateHasChanged();
     }
     bool IsOpen3 { get; set; }
-    void onclick3(MouseEventArgs e)
+    private void onclick3()
     {
         IsOpen3 = !IsOpen3;
         StateHasChanged();
     }
     bool IsOpen4 { get; set; }
-    void onclick4(MouseEventArgs e)
+    private void onclick4()
     {
         IsOpen4 = !IsOpen4;
         StateHasChanged();

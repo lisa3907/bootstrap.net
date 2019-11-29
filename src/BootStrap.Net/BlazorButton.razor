@@ -4,7 +4,7 @@
 
 @inherits BootStrapComponentBase
 
-<DynamicElement TagName="@Tag" onclick="@Onclick" type="@type" class="@classname" disabled="@disabled" role="button" aria-pressed="@pressed" aria-disabled="@disabled" tabindex="@tab" value="@Value" Attributes="@UnknownParameters">
+<DynamicElement TagName="@Tag" @onclick="Onclick" type="@type" class="@classname" disabled="@disabled" role="button" aria-pressed="@pressed" aria-disabled="@disabled" tabindex="@tab" value="@Value" Attributes="@UnknownParameters">
     @ChildContent
 </DynamicElement>
 
