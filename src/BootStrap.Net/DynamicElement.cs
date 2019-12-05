@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Blazor;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.RenderTree;
 using System;
 using System.Collections.Generic;
@@ -17,7 +16,10 @@ namespace BootStrap.Net
         /// <summary>
         /// Gets or sets the name of the element to render.
         /// </summary>
-        public string TagName { get; set; }
+        public string TagName
+        {
+            get; set;
+        }
 
         /// <summary>
         /// Gets or sets the attributes to render.
@@ -32,7 +34,11 @@ namespace BootStrap.Net
         /// <summary>
         /// Gets the <see cref="Microsoft.AspNetCore.Components.ElementRef"/>.
         /// </summary>
-        public ElementRef ElementRef { get; private set; }
+        public ElementRef ElementRef
+        {
+            get; private set;
+        }
+
         private IDictionary<string, object> _attributesToRender;
         private RenderFragment _childContent;
 
@@ -47,7 +53,7 @@ namespace BootStrap.Net
 
             // Combine any explicitly-supplied attributes with the remaining parameters
             var attributesParam = GetAndRemove<IReadOnlyDictionary<string, object>>(_attributesToRender, nameof(Attributes));
-           
+
             if (attributesParam != null)
             {
                 foreach (var kvp in attributesParam)
@@ -93,17 +99,18 @@ namespace BootStrap.Net
                     /*
                      * This is a workaround for:
                      * https://github.com/aspnet/AspNetCore/issues/8336.
-                     * 
+                     *
                      * NOTE: if other UI*EventArgs types (such as
                      * `UIChangeEventargs`) are used within DynamicElement, you
                      * must explicitly handle those below as well.
-                     * 
+                     *
                      * Handling EventCallback<UIEventArgs> altogether will not
                      * work.
                      */
                     case EventCallback<UIMouseEventArgs> ec:
                         builder.AddAttribute(1, param.Key, ec);
                         break;
+
                     default:
                         builder.AddAttribute(1, param.Key, param.Value);
                         break;

@@ -40,15 +40,20 @@ namespace BootStrap.Net
             AppendBoolProperty(sb, "mr-xl-auto", XLMRAuto);
             AppendBoolProperty(sb, "ml-xl-auto", XLMLAuto);
 
-            if (sb.Length == 0) { return defaultClass; }
-            else return sb.ToString();
+            if (sb.Length == 0)
+            {
+                return defaultClass;
+            }
+            else
+                return sb.ToString();
         }
 
         private void AppendProperty(StringBuilder sb, string prefix, string value)
         {
             if (value != null)
             {
-                if (sb.Length != 0) sb.Append(" ");
+                if (sb.Length != 0)
+                    sb.Append(" ");
                 sb.Append(prefix + value);
             }
         }
@@ -57,13 +62,16 @@ namespace BootStrap.Net
         {
             if (ShouldAppend)
             {
-                if (sb.Length != 0) sb.Append(" ");
+                if (sb.Length != 0)
+                    sb.Append(" ");
                 sb.Append(value);
             }
         }
 
         private string xs;
-        [Parameter] protected string XS
+
+        [Parameter]
+        protected string XS
         {
             get => xs;
 
@@ -72,7 +80,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "auto" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     xs = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -82,7 +89,9 @@ namespace BootStrap.Net
         }
 
         private string sm;
-        [Parameter] protected string SM
+
+        [Parameter]
+        protected string SM
         {
             get => sm;
 
@@ -91,7 +100,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "auto" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     sm = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -101,7 +109,9 @@ namespace BootStrap.Net
         }
 
         private string md;
-        [Parameter] protected string MD
+
+        [Parameter]
+        protected string MD
         {
             get => md;
 
@@ -110,7 +120,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "auto" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     md = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -120,7 +129,9 @@ namespace BootStrap.Net
         }
 
         private string lg;
-        [Parameter] protected string LG
+
+        [Parameter]
+        protected string LG
         {
             get => lg;
 
@@ -129,7 +140,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "auto" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     lg = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -139,7 +149,9 @@ namespace BootStrap.Net
         }
 
         private string xl;
-        [Parameter] protected string XL
+
+        [Parameter]
+        protected string XL
         {
             get => xl;
 
@@ -148,7 +160,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "auto" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     xl = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -158,7 +169,9 @@ namespace BootStrap.Net
         }
 
         private string xsorder;
-        [Parameter] protected string XSOrder
+
+        [Parameter]
+        protected string XSOrder
         {
             get => xsorder;
 
@@ -167,7 +180,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "first" || value.ToLowerInvariant() == "last" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     xsorder = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -177,7 +189,9 @@ namespace BootStrap.Net
         }
 
         private string smorder;
-        [Parameter] protected string SMOrder
+
+        [Parameter]
+        protected string SMOrder
         {
             get => smorder;
 
@@ -186,7 +200,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "first" || value.ToLowerInvariant() == "last" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     smorder = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -196,7 +209,9 @@ namespace BootStrap.Net
         }
 
         private string mdorder;
-        [Parameter] protected string MDOrder
+
+        [Parameter]
+        protected string MDOrder
         {
             get => mdorder;
 
@@ -205,7 +220,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "first" || value.ToLowerInvariant() == "last" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     mdorder = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -215,7 +229,9 @@ namespace BootStrap.Net
         }
 
         private string lgorder;
-        [Parameter] protected string LGOrder
+
+        [Parameter]
+        protected string LGOrder
         {
             get => lgorder;
 
@@ -224,7 +240,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "first" || value.ToLowerInvariant() == "last" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     lgorder = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -234,7 +249,9 @@ namespace BootStrap.Net
         }
 
         private string xlorder;
-        [Parameter] protected string XLOrder
+
+        [Parameter]
+        protected string XLOrder
         {
             get => xlorder;
 
@@ -243,7 +260,6 @@ namespace BootStrap.Net
                 if (value.ToLowerInvariant() == "first" || value.ToLowerInvariant() == "last" || value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     xlorder = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -253,7 +269,9 @@ namespace BootStrap.Net
         }
 
         private string xsoffset;
-        [Parameter] protected string XSOffset
+
+        [Parameter]
+        protected string XSOffset
         {
             get => xsoffset;
 
@@ -262,7 +280,6 @@ namespace BootStrap.Net
                 if (value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     xsoffset = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -272,7 +289,9 @@ namespace BootStrap.Net
         }
 
         private string smoffset;
-        [Parameter] protected string SMOffset
+
+        [Parameter]
+        protected string SMOffset
         {
             get => smoffset;
 
@@ -281,7 +300,6 @@ namespace BootStrap.Net
                 if (value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     smoffset = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -291,7 +309,9 @@ namespace BootStrap.Net
         }
 
         private string mdoffset;
-        [Parameter] protected string MDOffset
+
+        [Parameter]
+        protected string MDOffset
         {
             get => mdoffset;
 
@@ -300,7 +320,6 @@ namespace BootStrap.Net
                 if (value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     mdoffset = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -310,7 +329,9 @@ namespace BootStrap.Net
         }
 
         private string lgoffset;
-        [Parameter] protected string LGOffset
+
+        [Parameter]
+        protected string LGOffset
         {
             get => lgoffset;
 
@@ -319,7 +340,6 @@ namespace BootStrap.Net
                 if (value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     lgoffset = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -329,7 +349,9 @@ namespace BootStrap.Net
         }
 
         private string xloffset;
-        [Parameter] protected string XLOffset
+
+        [Parameter]
+        protected string XLOffset
         {
             get => xloffset;
 
@@ -338,7 +360,6 @@ namespace BootStrap.Net
                 if (value == "1" || value == "2" || value == "3" || value == "4" || value == "5" || value == "6" || value == "7" || value == "8" || value == "9" || value == "10" || value == "11" || value == "12")
                 {
                     xloffset = value.ToLowerInvariant();
-
                 }
                 else
                 {
@@ -347,15 +368,64 @@ namespace BootStrap.Net
             }
         }
 
-        [Parameter] protected bool MRAuto { get; set; }
-        [Parameter] protected bool MLAuto { get; set; }
-        [Parameter] protected bool SMMRAuto { get; set; }
-        [Parameter] protected bool SMMLAuto { get; set; }
-        [Parameter] protected bool MDMRAuto { get; set; }
-        [Parameter] protected bool MDMLAuto { get; set; }
-        [Parameter] protected bool LGMRAuto { get; set; }
-        [Parameter] protected bool LGMLAuto { get; set; }
-        [Parameter] protected bool XLMRAuto { get; set; }
-        [Parameter] protected bool XLMLAuto { get; set; }
+        [Parameter]
+        protected bool MRAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool MLAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool SMMRAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool SMMLAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool MDMRAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool MDMLAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool LGMRAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool LGMLAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool XLMRAuto
+        {
+            get; set;
+        }
+
+        [Parameter]
+        protected bool XLMLAuto
+        {
+            get; set;
+        }
     }
 }
