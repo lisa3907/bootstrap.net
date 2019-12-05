@@ -13,7 +13,7 @@
             return $"{fluid} {Class}";
         }
     }
-    [Parameter] private bool IsFluid { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public bool IsFluid { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

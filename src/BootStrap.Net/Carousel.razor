@@ -2,7 +2,7 @@
 @using System.Timers
 @*@implements IDisposable*@
 
-<DynamicElement Attributes="@UnknownParameters" TagName="div" class="@classname" onmouseover="@onmouseover" onmouseout="@onmouseout">
+<DynamicElement Attributes="@UnknownParameters" TagName="div" class="@classname" @onmouseover="onmouseover" @onmouseout="onmouseout">
     @ChildContent
 </DynamicElement>
 
@@ -14,18 +14,18 @@
             return $"carousel slide {Class}";
         }
     }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
-    [Parameter] private int Interval { get; set; } = 5000;
-    [Parameter] private bool PauseOnHover { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public int Interval { get; set; } = 5000;
+    [Parameter] public bool PauseOnHover { get; set; }
 
-    [Parameter] private int NumberOfItems { get; set; }
-    [Parameter] private int ActiveIndex { get; set; }
-    [Parameter] private Action<int> ActiveIndexChanged { get; set; }
+    [Parameter] public int NumberOfItems { get; set; }
+    [Parameter] public int ActiveIndex { get; set; }
+    [Parameter] public Action<int> ActiveIndexChanged { get; set; }
 
     private Timer _timer;
 
-    protected override void OnInit()
+    protected override void OnInitialized()
     {
         if(_timer == null)
         {
@@ -41,7 +41,7 @@
         if (ActiveIndex == NumberOfItems - 1) { ActiveIndex = 0; }
         else { ActiveIndex = ActiveIndex + 1; }
 
-        ActiveIndexChanged(ActiveIndex);
+        ActiveIndexChanged?.Invoke(ActiveIndex);
     }
 
     private void onmouseover()

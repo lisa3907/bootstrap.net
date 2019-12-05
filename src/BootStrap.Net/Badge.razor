@@ -1,6 +1,6 @@
 ﻿@inherits BootStrapComponentBase
 
-<DynamicElement TagName="@Tag" class="@classname" href="@Href" onclick="@_onclick" Attributes="@UnknownParameters">
+<DynamicElement TagName="@Tag" class="@classname" href="@Href" @onclick="_onclick" Attributes="@UnknownParameters">
     @ChildContent
 </DynamicElement>
 
@@ -16,11 +16,11 @@
 
     private string Tag { get; set; } = "span";
 
-    [Parameter] private Color Color { get; set; } = Color.Primary;
-    [Parameter] private bool IsPill { get; set; }
+    [Parameter] public Color Color { get; set; } = Color.Primary;
+    [Parameter] public bool IsPill { get; set; }
     private string _href;
     [Parameter]
-    private string Href
+    public string Href
     {
         get
         {
@@ -42,7 +42,7 @@
 
     private Action _onlick { get; set; }
     [Parameter]
-    private Action onclick
+    public Action onclick
     {
         get
         {
@@ -63,8 +63,8 @@
         }
     }
 
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 
     void _onclick()
     {

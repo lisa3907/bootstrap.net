@@ -71,7 +71,7 @@ namespace BootStrap.Net
         private string xs;
 
         [Parameter]
-        protected string XS
+        public string XS
         {
             get => xs;
 
@@ -91,7 +91,7 @@ namespace BootStrap.Net
         private string sm;
 
         [Parameter]
-        protected string SM
+        public string SM
         {
             get => sm;
 
@@ -111,7 +111,7 @@ namespace BootStrap.Net
         private string md;
 
         [Parameter]
-        protected string MD
+        public string MD
         {
             get => md;
 
@@ -131,7 +131,7 @@ namespace BootStrap.Net
         private string lg;
 
         [Parameter]
-        protected string LG
+        public string LG
         {
             get => lg;
 
@@ -151,7 +151,7 @@ namespace BootStrap.Net
         private string xl;
 
         [Parameter]
-        protected string XL
+        public string XL
         {
             get => xl;
 
@@ -171,7 +171,7 @@ namespace BootStrap.Net
         private string xsorder;
 
         [Parameter]
-        protected string XSOrder
+        public string XSOrder
         {
             get => xsorder;
 
@@ -191,7 +191,7 @@ namespace BootStrap.Net
         private string smorder;
 
         [Parameter]
-        protected string SMOrder
+        public string SMOrder
         {
             get => smorder;
 
@@ -211,7 +211,7 @@ namespace BootStrap.Net
         private string mdorder;
 
         [Parameter]
-        protected string MDOrder
+        public string MDOrder
         {
             get => mdorder;
 
@@ -231,7 +231,7 @@ namespace BootStrap.Net
         private string lgorder;
 
         [Parameter]
-        protected string LGOrder
+        public string LGOrder
         {
             get => lgorder;
 
@@ -251,7 +251,7 @@ namespace BootStrap.Net
         private string xlorder;
 
         [Parameter]
-        protected string XLOrder
+        public string XLOrder
         {
             get => xlorder;
 
@@ -271,7 +271,7 @@ namespace BootStrap.Net
         private string xsoffset;
 
         [Parameter]
-        protected string XSOffset
+        public string XSOffset
         {
             get => xsoffset;
 
@@ -291,7 +291,7 @@ namespace BootStrap.Net
         private string smoffset;
 
         [Parameter]
-        protected string SMOffset
+        public string SMOffset
         {
             get => smoffset;
 
@@ -311,7 +311,7 @@ namespace BootStrap.Net
         private string mdoffset;
 
         [Parameter]
-        protected string MDOffset
+        public string MDOffset
         {
             get => mdoffset;
 
@@ -331,7 +331,7 @@ namespace BootStrap.Net
         private string lgoffset;
 
         [Parameter]
-        protected string LGOffset
+        public string LGOffset
         {
             get => lgoffset;
 
@@ -351,7 +351,7 @@ namespace BootStrap.Net
         private string xloffset;
 
         [Parameter]
-        protected string XLOffset
+        public string XLOffset
         {
             get => xloffset;
 
@@ -369,61 +369,61 @@ namespace BootStrap.Net
         }
 
         [Parameter]
-        protected bool MRAuto
+        public bool MRAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool MLAuto
+        public bool MLAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool SMMRAuto
+        public bool SMMRAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool SMMLAuto
+        public bool SMMLAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool MDMRAuto
+        public bool MDMRAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool MDMLAuto
+        public bool MDMLAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool LGMRAuto
+        public bool LGMRAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool LGMLAuto
+        public bool LGMLAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool XLMRAuto
+        public bool XLMRAuto
         {
             get; set;
         }
 
         [Parameter]
-        protected bool XLMLAuto
+        public bool XLMLAuto
         {
             get; set;
         }

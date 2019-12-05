@@ -25,15 +25,15 @@
         }
     }
 
-    [Parameter] private bool IsList { get; set; }
-    [Parameter] private Alignment Alignment { get; set; } = Alignment.None;
-    [Parameter] private bool IsVertical { get; set; }
-    [Parameter] private bool IsTabs { get; set; }
-    [Parameter] private bool IsPills { get; set; }
-    [Parameter] private bool IsFill { get; set; }
-    [Parameter] private bool IsNavbar { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public bool IsList { get; set; }
+    [Parameter] public Alignment Alignment { get; set; } = Alignment.None;
+    [Parameter] public bool IsVertical { get; set; }
+    [Parameter] public bool IsTabs { get; set; }
+    [Parameter] public bool IsPills { get; set; }
+    [Parameter] public bool IsFill { get; set; }
+    [Parameter] public bool IsNavbar { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 
     private string GetAlignment()
     {

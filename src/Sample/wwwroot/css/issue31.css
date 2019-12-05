@@ -3,7 +3,6 @@
     border-bottom: 1px solid #c9cccd;
 }
 
-
 .content {
     background-color: #ecf0f1;
     border-top: solid 1px #e0e4e5;
@@ -50,7 +49,6 @@
         padding: 8px 19px;
         height: 38px;
     }
-
 
     .headernav .search button {
         border: solid 1px #697683;
@@ -123,7 +121,6 @@
     line-height: 38px;
     padding: 0 15px;
 }
-
 
 .avatar .green {
     background-color: #80d3ab;

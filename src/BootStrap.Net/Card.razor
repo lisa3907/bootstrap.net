@@ -1,5 +1,5 @@
 ﻿@inherits BootStrapComponentBase
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 
 <DynamicElement Attributes="@UnknownParameters" TagName="@Tag" class="@classname">
     @ChildContent
@@ -40,15 +40,15 @@
 
     }
 
-    [Parameter] private CardType CardType { get; set; } = CardType.Card;
-    [Parameter] private VerticalAlignment VerticalAlignment { get; set; } = VerticalAlignment.None;
-    [Parameter] private Alignment Alignment { get; set; } = Alignment.Left;
-    [Parameter] private HeadingSize HeadingSize { get; set; } = HeadingSize.None;
-    [Parameter] private bool IsInverse { get; set; }
-    [Parameter] private Color Color { get; set; } = Color.None;
-    [Parameter] private bool IsOutline { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public CardType CardType { get; set; } = CardType.Card;
+    [Parameter] public VerticalAlignment VerticalAlignment { get; set; } = VerticalAlignment.None;
+    [Parameter] public Alignment Alignment { get; set; } = Alignment.Left;
+    [Parameter] public HeadingSize HeadingSize { get; set; } = HeadingSize.None;
+    [Parameter] public bool IsInverse { get; set; }
+    [Parameter] public Color Color { get; set; } = Color.None;
+    [Parameter] public bool IsOutline { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 
     private string GetImageVerticalAlignmnet()
     {

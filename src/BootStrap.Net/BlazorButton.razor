@@ -1,10 +1,10 @@
 ﻿@using BootStrap.Net
-@using BootStrap.Net.util
+@using BootStrap.Net.Util
 @using Microsoft.AspNetCore.Components
 
 @inherits BootStrapComponentBase
 
-<DynamicElement TagName="@Tag" onclick="@Onclick" type="@type" class="@classname" disabled="@disabled" role="button" aria-pressed="@pressed" aria-disabled="@disabled" tabindex="@tab" value="@Value" Attributes="@UnknownParameters">
+<DynamicElement TagName="@Tag" @onclick="Onclick" type="@type" class="@classname" disabled="@disabled" role="button" aria-pressed="@pressed" aria-disabled="@disabled" tabindex="@tab" value="@Value" Attributes="@UnknownParameters">
     @ChildContent
 </DynamicElement>
 
@@ -68,12 +68,12 @@
         }
     }
 
-    [Parameter] private Action<UIMouseEventArgs> Onclick { get; set; }
-    [Parameter] private Color Color { get; set; } = Color.Primary;
+    [Parameter] public Action<MouseEventArgs> Onclick { get; set; }
+    [Parameter] public Color Color { get; set; } = Color.Primary;
 
     private ButtonType _buttonType = ButtonType.Button;
     [Parameter]
-    private ButtonType ButtonType
+    public ButtonType ButtonType
     {
         get
         {
@@ -103,12 +103,12 @@
             }
         }
     }
-    [Parameter] private bool IsOutline { get; set; }
-    [Parameter] private Size Size { get; set; } = Size.None;
-    [Parameter] private bool IsBlock { get; set; }
-    [Parameter] private string Value { get; set; }
-    [Parameter] private bool IsActive { get; set; }
-    [Parameter] private bool IsDisabled { get; set; }
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public bool IsOutline { get; set; }
+    [Parameter] public Size Size { get; set; } = Size.None;
+    [Parameter] public bool IsBlock { get; set; }
+    [Parameter] public string Value { get; set; }
+    [Parameter] public bool IsActive { get; set; }
+    [Parameter] public bool IsDisabled { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

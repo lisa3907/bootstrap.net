@@ -1,5 +1,4 @@
-﻿@using Microsoft.AspNetCore.Blazor
-@using BootStrap.Net.util
+﻿@using BootStrap.Net.Util
 
 @inject Microsoft.JSInterop.IJSRuntime JSRuntime
 
@@ -10,9 +9,10 @@
 
 @functions {
     //Didnt change this to use DynamicElement so that ref will still work
-    private ElementRef tooltip;
-    private ElementRef arrow;
-    protected override async void OnAfterRender()
+    private ElementReference tooltip;
+    private ElementReference arrow;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (Target != null)
         {
@@ -21,8 +21,8 @@
         }
     }
 
-    [Parameter] private Placement Placement { get; set; } = Placement.Auto;
-    [Parameter] private string Title { get; set; }
-    [Parameter] private string Target { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public Placement Placement { get; set; } = Placement.Auto;
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Target { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

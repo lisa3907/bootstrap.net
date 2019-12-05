@@ -34,10 +34,10 @@
             }
         }
     }
-    [Parameter] private MediaType MediaType { get; set; } = MediaType.Media;
-    [Parameter] private VerticalAlignment VerticalAlignment { get; set; } = VerticalAlignment.None;
-    [Parameter] private string Class { get; set; }
-    [Parameter] private RenderFragment ChildContent { get; set; }
+    [Parameter] public MediaType MediaType { get; set; } = MediaType.Media;
+    [Parameter] public VerticalAlignment VerticalAlignment { get; set; } = VerticalAlignment.None;
+    [Parameter] public string Class { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 
     private string GetVerticalAlignmnet()
     {
